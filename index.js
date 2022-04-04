@@ -87,4 +87,5 @@ app.delete('/bd/deletarAluno:id', verifyJWT , async (req, res) => {
     return res.json(({mensagem: 'Usuário Deletado com Sucesso'}))
 });
 
-app.listen(process.env.PORT || 3000);
+
+app.listen(process.env.PORT || 3000); 
