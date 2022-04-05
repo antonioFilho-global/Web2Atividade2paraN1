@@ -87,6 +87,10 @@ app.delete('/bd/deletarAluno:id', verifyJWT , async (req, res) => {
     return res.json(({mensagem: 'Usuário Deletado com Sucesso'}))
 });
 
+/* Rota Home */
+app.get('/', function (req, res){
+    res.send("Api Alunos: Atividade 2 para N1");
+});
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('Aplicação Rodando')
